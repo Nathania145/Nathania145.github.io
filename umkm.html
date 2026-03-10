@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thania Mart - Kebutuhan Semua Orang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .product-card:hover { transform: translateY(-5px); transition: 0.3s; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky-header bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117534_5c8f5190.png" 
+                     alt="Logo Thania Mart" class="h-12 w-12 object-contain" onerror="this.src='https://via.placeholder.com/50?text=TM'">
+                <h1 class="text-2xl font-bold text-blue-600">Thania Mart</h1>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium">
+                <a href="#home" class="hover:text-blue-500">Beranda</a>
+                <a href="#katalog" class="hover:text-blue-500">Katalog</a>
+                <a href="#testimoni" class="hover:text-blue-500">Suara Pengunjung</a>
+            </nav>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">
+                <i class="fa-solid fa-cart-shopping mr-2"></i>Keranjang
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="home" class="container mx-auto px-4 py-6">
+        <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117524_4cae817f.png" 
+                 alt="Banner Thania Mart" class="w-full h-auto object-cover" onerror="this.src='https://via.placeholder.com/1200x400?text=Selamat+Datang+di+Thania+Mart'">
+        </div>
+    </section>
+
+    <!-- Kategori Produk -->
+    <section class="container mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-8 text-center">Kategori Produk</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#kebutuhan-pokok" class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-wheat-awn text-3xl text-orange-500 mb-3"></i>
+                <p class="font-semibold text-sm">Kebutuhan Pokok</p>
+            </a>
+            <a href="#susu-minuman" class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-bottle-water text-3xl text-blue-400 mb-3"></i>
+                <p class="font-semibold text-sm">Susu & Minuman</p>
+            </a>
+            <a href="#mandi-cuci" class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-soap text-3xl text-green-500 mb-3"></i>
+                <p class="font-semibold text-sm">Perlengkapan Mandi</p>
+            </a>
+            <a href="#snack" class="bg-white p-6 rounded-xl shadow-sm text-center hover:shadow-md transition border border-gray-100">
+                <i class="fa-solid fa-cookie-bite text-3xl text-red-400 mb-3"></i>
+                <p class="font-semibold text-sm">Cemilan & Snack</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Katalog Produk -->
+    <main id="katalog" class="container mx-auto px-4 py-10">
+        <h2 class="text-3xl font-bold mb-10 text-center text-blue-700">Katalog Produk</h2>
+
+        <!-- Kebutuhan Pokok -->
+        <div id="kebutuhan-pokok" class="mb-12">
+            <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Kebutuhan Pokok</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Beras -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116470_9fcf8bed.jpg" alt="Beras Premium" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Beras Premium 5 kg</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 75.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Minyak -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116632_72f38aed.jpg" alt="Minyak Goreng" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Minyak Goreng 2 Liter</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 34.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Gula -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116658_4c8d41d5.jpg" alt="Gula Pasir" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Gula Pasir 1 kg</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 17.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Telur -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116641_e0193a30.jpg" alt="Telur Ayam" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Telur Ayam 1 kg</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 28.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Mie -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116705_ad6b2da9.jpg" alt="Mie Instan" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Mie Instan Per Bungkus</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 3.100</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Susu & Minuman -->
+        <div id="susu-minuman" class="mb-12">
+            <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Produk Susu & Minuman</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Susu -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116732_0abad437.jpg" alt="Susu UHT" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Susu UHT 1 Liter</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 18.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Air Mineral -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116781_dd492aa4.jpg" alt="Air Mineral" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Air Mineral 600 ml</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 3.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Kopi -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116756_9a5c5de6.jpg" alt="Kopi Sachet" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Kopi Sachet Isi 10</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 15.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Teh -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773116789_586ca795.jpg" alt="Teh Celup" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Teh Celup Kotak (Isi 25)</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 10.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Jus -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117242_fd842c03.jpg" alt="Jus Buah" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Jus Buah Kemasan 250 ml</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 7.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perlengkapan Mandi & Cuci -->
+        <div id="mandi-cuci" class="mb-12">
+            <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Perlengkapan Mandi & Cuci</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Sabun Mandi -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117253_137e6629.jpg" alt="Sabun Mandi" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Sabun Mandi Batang 80 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 4.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Shampoo -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117278_45386722.jpg" alt="Shampoo" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Shampoo 170 ml</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 25.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Pasta Gigi -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117261_c93ae970.jpg" alt="Pasta Gigi" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Pasta Gigi 190 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 12.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Deterjen -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117272_fd9b54f2.jpg" alt="Deterjen" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Deterjen Bubuk 800 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 20.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Cuci Piring -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117294_7ae4d2b1.jpg" alt="Sabun Cuci Piring" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Sabun Cuci Piring 700 ml</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 14.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Camilan & Snack -->
+        <div id="snack" class="mb-12">
+            <h3 class="text-xl font-bold mb-6 border-l-4 border-blue-600 pl-3">Camilan & Snack</h3>
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Keripik -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117302_e31ceeac.jpg" alt="Keripik" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Keripik Kentang 68 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 10.500</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Biskuit -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117314_1b5e1954.jpg" alt="Biskuit" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Biskuit Gandum 100 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 8.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+                <!-- Cokelat -->
+                <div class="bg-white rounded-xl shadow-sm overflow-hidden product-card border border-gray-100">
+                    <img src="https://simangu.smksalirsyad-hgl.sch.id/apimangu/uploads/siswa/232410035/1773117321_10668e73.jpg" alt="Cokelat" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold text-sm h-10 overflow-hidden">Cokelat Batang 60 gr</h4>
+                        <p class="text-blue-600 font-bold mt-2">Rp 15.000</p>
+                        <button class="w-full mt-3 bg-blue-50 text-blue-600 py-2 rounded-lg text-xs font-bold hover:bg-blue-600 hover:text-white transition">Tambah</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Testimonial Section -->
+    <section id="testimoni" class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center">Suara Pengunjung</h2>
+            
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg mb-10">
+                <form id="commentForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">Nama</label>
+                        <input type="text" id="visitorName" placeholder="Nama Anda (atau biarkan kosong untuk Guest)" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">Komentar</label>
+                        <textarea id="visitorComment" rows="3" placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition">Kirim Komentar</button>
+                </form>
+            </div>
+
+            <div id="commentList" class="max-w-2xl mx-auto space-y-4">
+                <!-- Komentar Default -->
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-blue-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center text-blue-600 font-bold text-xs">A</div>
+                        <span class="font-bold text-sm">Andi (Guest)</span>
+                        <span class="text-xs text-gray-400">Baru saja</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Pelayanannya ramah banget dan barangnya lengkap!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h2 class="text-2xl font-bold text-blue-400 mb-4">Thania Mart</h2>
+                <p class="text-gray-400 text-sm leading-relaxed">Mini market pilihan keluarga, menyediakan berbagai kebutuhan pokok dan harian dengan harga bersahabat di Bekasi.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-blue-400"></i>
+                        <span>jln. underpass jb futsal no.45, Kota Bekasi</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-blue-400"></i>
+                        <a href="mailto:thanianathan07@gmail.com" class="hover:text-white">thanianathan07@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe text-blue-400"></i>
+                        <a href="https://nathania145.github.io" target="_blank" class="hover:text-white">nathania145.github.io</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Pemilik</h3>
+                <p class="text-blue-400 font-bold">Nathania Nur Fitriani</p>
+                <div class="mt-6 flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-10 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2024 Thania Mart. Semua Hak Dilindungi.
+        </div>
+    </footer>
+
+    <script>
+        // Logika Form Testimoni
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nameInput = document.getElementById('visitorName');
+            const commentInput = document.getElementById('visitorComment');
+            const commentList = document.getElementById('commentList');
+            
+            const name = nameInput.value.trim() || "Guest";
+            const comment = commentInput.value.trim();
+            
+            if (comment === "") return;
+
+            // Buat elemen komentar baru
+            const div = document.createElement('div');
+            div.className = "bg-white p-4 rounded-xl shadow-sm border border-blue-100 animate-pulse";
+            div.innerHTML = `
+                <div class="flex items-center gap-2 mb-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xs">${name.charAt(0).toUpperCase()}</div>
+                    <span class="font-bold text-sm">${name}</span>
+                    <span class="text-xs text-gray-400">Baru saja</span>
+                </div>
+                <p class="text-sm text-gray-600">${comment}</p>
+            `;
+            
+            // Masukkan ke daftar paling atas
+            commentList.prepend(div);
+            
+            // Hapus animasi pulse setelah sesaat
+            setTimeout(() => div.classList.remove('animate-pulse'), 1000);
+
+            // Reset form
+            nameInput.value = "";
+            commentInput.value = "";
+            
+            // Feedback sederhana (Pengganti alert)
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = "Terkirim!";
+            btn.classList.replace('bg-blue-600', 'bg-green-600');
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-green-600', 'bg-blue-600');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
